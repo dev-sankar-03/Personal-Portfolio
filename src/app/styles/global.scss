@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+body{
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+}
+
+.body-container{
+
+    .portfolio-navbar{
+        left: 50%;
+        position: fixed;
+        top: 16px;
+        transform: translateX(-50%);
+        width: auto;
+        z-index: 1;
+        
+        .navbar-container{
+            backdrop-filter: blur(32px);
+            background: linear-gradient(rgba(61, 61, 61, 0.16) 0%, rgba(0, 0, 0, 0.1) 100%);
+            border-radius: 16px;
+            border: 1.25px solid #85858526;
+            transform: none;
+            transform-origin: 50% 50% 0px;
+            align-items: center;
+            overflow: visible;
+            padding: 12px;
+            height: 25px;
+            width: 1100px;
+
+            .inner-container{
+                align-items: center;
+                display: flex;
+                flex: 0 0 auto;
+                flex-flow: row;
+                gap: 177px;
+                height: min-content;
+                overflow: visible;
+                padding: 0px;
+                position: relative;
+                width: 100%;
+            }
+        }
+    }
+}
