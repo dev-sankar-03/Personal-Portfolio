@@ -12,7 +12,7 @@ export default function NavBar(){
                         <div className="name-container">
                             <span>Sankar</span>
                         </div>
-                        <div id="pages-nav-container">
+                        <div className="pages-nav-container">
                             <div className="page-url">
                                 <Link href="/Home">Home</Link>
                             </div>
@@ -26,7 +26,7 @@ export default function NavBar(){
                                 <Link href="/Contact">Contact</Link>
                             </div>
                         </div>
-                        <div className="resume-btn-cotainer">
+                        <div className="resume-btn-container">
                             <span>View My Resume</span>
                         </div>
                     </div>

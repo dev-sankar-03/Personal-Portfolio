@@ -4,7 +4,9 @@ import  NavBar  from "@/app/components/NavBar";
 import "@/app/styles/global.scss";
 
 const interFont = Inter({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-inter",
+  display: "swap",
   subsets: ["latin"],
 });
 
