@@ -5,7 +5,6 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image'
 import Link from 'next/link'
 import StarCanvas from './components/Starcanvas';
-import { useEffect } from 'react';
 
 export default function Home() {
 
@@ -25,18 +24,18 @@ export default function Home() {
           <div className="home-content">
             <div className="hero-content">
               <h1>
-                Identify quality issues from the 
+                Building softwares that solves 
                 <br></br>
-                earliest warning signs
+                problems and scales fast
               </h1>
             </div>
             <div className="hero-description">
               <h2>
-                 With automatic issue detection and prioritization, your team can 
+                 Full stack developer focused on clean, scalable web solutions. Experienced in modern
                  <br></br>
-                focus on identifying root causes and implementing countermeasures to 
+                  web development across front-end and back-end. Skilled in REST API design
                 <br></br>
-                increase customer satisfaction and profitability.
+                 and background job processing.
               </h2>
             </div>
             <div className="resume-btn">

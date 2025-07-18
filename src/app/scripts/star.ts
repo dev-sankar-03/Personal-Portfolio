@@ -5,7 +5,7 @@ class Star {
   constructor(w: number, h: number) {
     this.x = Math.random() * w;
     this.y = Math.random() * h;
-    this.radius = Math.random() * 1.5 + 0.5;
+    this.radius = Math.random() * 0.8 + 0.5;
     this.alpha = Math.random() * 0.5 + 0.5;
     this.speed = Math.random() * 0.5 + 0.2;
   }
@@ -21,7 +21,7 @@ class Star {
   }
 }
 
-export function useStarfield(canvasRef: React.RefObject<HTMLCanvasElement>) {
+export function useStarfield(canvasRef: any) {
   const starsRef = useRef<Star[]>([]);
  const animRef = useRef<number | null>(null);
 
@@ -42,7 +42,7 @@ export function useStarfield(canvasRef: React.RefObject<HTMLCanvasElement>) {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'black';
+      ctx.fillStyle = '#030712';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       for (const star of starsRef.current) {

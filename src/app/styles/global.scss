@@ -94,4 +94,58 @@ body{
             }
         }
     }
+
+     .relative{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        > :nth-child(1) {
+            margin-right: -13rem; 
+        }
+        > :nth-child(2) {
+            margin-left: 0rem;
+        }
+
+        opacity: 0.2;
+
+        .light & {
+            opacity: 0.2;
+        }
+
+        .gradient-left{
+            filter: blur(106px);
+            height: 14rem; 
+
+            background-image: linear-gradient(
+                to bottom right,
+                #1d4ed8,           
+                #c084fc            
+                );
+
+            .light & {
+                background-image: linear-gradient(
+                to bottom right,
+                #1d4ed8,           
+                #c084fc            
+                );
+            }
+        }
+
+        .gradient-right{
+            filter: blur(106px);
+            height: 8rem;
+            background-image: linear-gradient(to right, #22d3ee, #4f46e5);
+
+            .light & {
+                background-image: linear-gradient(to right, #22d3ee, #4f46e5);
+            }
+
+        }
+    }
 }

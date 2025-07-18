@@ -14,7 +14,7 @@ export default function NavBar(){
                         </div>
                         <div className="pages-nav-container">
                             <div className="page-url">
-                                <Link href="/Home">Home</Link>
+                                <Link href="/">Home</Link>
                             </div>
                             <div className="page-url">
                                 <Link href="/About">About</Link>
