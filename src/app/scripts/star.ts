@@ -21,7 +21,7 @@ class Star {
   }
 }
 
-export function useStarfield(canvasRef: React.RefObject<HTMLCanvasElement>) {
+export function useStarfield(canvasRef: any) {
   const starsRef = useRef<Star[]>([]);
  const animRef = useRef<number | null>(null);
 
